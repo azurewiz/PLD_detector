@@ -10,8 +10,7 @@ from PIL import Image
 st.set_page_config(page_title="Potato Leaf Disease Detector", page_icon="🥔", layout="wide")
 
 # Load Model
-model = load_model("C:/Users/Sai Arvind Arun/Desktop/certifications/internship/microsoft nd sap 2025 jan/potato_leaf_disease_detection_2/models/potato_leaf_model.h5", compile=False)
-
+model = load_model("models/potato_leaf_model.h5")
 # Custom CSS Styling
 st.markdown("""
     <style>
@@ -25,8 +24,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Sidebar for Navigation
-st.sidebar.image("C:/Users/Sai Arvind Arun/Desktop/certifications/internship/microsoft nd sap 2025 jan/potato_leaf_disease_detection_2/assets/potato-chips-23994.png", width=150)
-
+st.sidebar.image("assets/potato-chips-23994.png")
 st.sidebar.title("🔍 Navigation")
 page = st.sidebar.radio("Go to", ["📂 Upload Image", "📸 Use Webcam", "ℹ️ About"])
 
