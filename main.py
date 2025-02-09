@@ -37,7 +37,7 @@ def predict_image(image):
     classes = ["🍂 Early Blight", "🍁 Late Blight", "🍃 Healthy"]
     return classes[np.argmax(predictions)]
 
-# 📌 Upload Image Section
+#  Upload Image Section
 if page == "📂 Upload Image":
     st.title("🥔 Potato Leaf Disease Detection")
     st.write("Upload an image of a potato leaf, and the model will classify it.")
@@ -54,7 +54,7 @@ if page == "📂 Upload Image":
         # Display Prediction Result
         st.markdown(f"<div class='prediction-box'><h2>🌟 Prediction: {result}</h2></div>", unsafe_allow_html=True)
 
-# 📌 Use Webcam Section
+#  Use Webcam Section
 elif page == "📸 Use Webcam":
     st.title("📷 Live Potato Leaf Detection")
     st.write("Capture an image using your webcam.")
@@ -76,7 +76,7 @@ elif page == "📸 Use Webcam":
             # Display Prediction Result
             st.markdown(f"<div class='prediction-box'><h2>🌟 Prediction: {result}</h2></div>", unsafe_allow_html=True)
 
-# 📌 About Section
+#  About Section
 else:
     st.title("ℹ️ About This Project")
     st.write("""
@@ -86,4 +86,4 @@ else:
         - 🌱 **Provides Leaf Health Insights**
     """)
 
-    st.markdown("**Developer: Sai Arvind Arun** 👨‍💻")
+    st.markdown("**Developer: Sai Arvind Arun** ")
